@@ -1,0 +1,6 @@
+@PaschoaApi_HostAddress = http://localhost:5234
+
+GET {{PaschoaApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

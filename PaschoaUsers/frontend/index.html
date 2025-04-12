@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaschoaUser - Painel de Gestão</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://i.ibb.co/9VHpsvY/logo.png" alt="logo" />
+        <span>PaschoaUser</span>
+      </div>
+      <div class="title">Painel de Gestão</div>
+    </header>
+
+    <main class="container">
+      <h1>Usuários</h1>
+      <button onclick="criarUsuario()" class="btn-add">
+        <i class="fas fa-plus"></i> Criar Usuário Aleatório
+      </button>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Foto</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Gênero</th>
+            <th>Cidade</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaUsuarios"></tbody>
+      </table>
+    </main>
+
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <h2>Editar Usuário</h2>
+        <img id="editAvatar" class="avatar" src="" alt="Foto" />
+        <input type="hidden" id="editId" />
+        <input type="text" id="editNome" placeholder="Nome" />
+        <input type="email" id="editEmail" placeholder="Email" />
+        <select id="editGenero">
+          <option value="male">Masculino</option>
+          <option value="female">Feminino</option>
+        </select>
+        <input type="text" id="editCidade" placeholder="Cidade" />
+        <input type="text" id="editFotoUrl" placeholder="Foto URL" />
+        <div class="modal-buttons">
+          <button onclick="fecharModal()" class="cancelar">Cancelar</button>
+          <button onclick="salvarEdicao()" class="salvar">Salvar</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Desenvolvido por Kevin Lopes —
+      <a href="https://github.com/KevinLopes23" target="_blank"
+        >github.com/KevinLopes23</a
+      >
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
