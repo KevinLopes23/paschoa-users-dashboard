@@ -133,19 +133,6 @@ const API_URL = 'http://localhost:5000/api';
 - Em caso de falha de conexão com o banco de dados, confirme se as credenciais estão corretas e se o PostgreSQL está em execução
 - Para problemas com a API externa, verifique sua conexão com a internet e se a Random User API está operacional
 
-### Ambiente de produção
-Para implantar em ambiente de produção:
-1. Publique a API .NET:
-```bash
-cd PaschoaApi
-dotnet publish -c Release
-```
-
-2. Configure um servidor web (Nginx, Apache) para servir os arquivos estáticos do front-end
-3. Configure um servidor de aplicação para hospedar a API .NET
-4. Atualize as URLs de API no front-end conforme necessário
-
----
 ---
 ## 👨‍💻 Autor
 **Kevin Lopes**
