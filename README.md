@@ -150,5 +150,5 @@ dotnet publish -c Release
 ## 👨‍💻 Autor
 **Kevin Lopes**
 
-* GitHub: [@seu-usuario](https://github.com/KevinLopes23)
-* LinkedIn: [@seu-perfil](https://www.linkedin.com/in/kevin-lopes-151797221/)
+* GitHub: [@KevinLopes23](https://github.com/KevinLopes23)
+* LinkedIn: [@kevin-lopes](https://www.linkedin.com/in/kevin-lopes-151797221/)
